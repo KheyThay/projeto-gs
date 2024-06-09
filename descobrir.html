@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/descobrir.css" />
+    <link rel="icon" href="./assets/img/logo.png">
+    <title>OceanStream</title>
+  </head>
+  <body>
+  <!--Menu vertical-->
+<div class="container">
+    <ul class="link-items">
+      <div class="logo">
+        <img src="./assets/img/logo.png" alt="logo da OceanStream">
+      </div>
+      <li class="link-item ">
+        <a href="index.html" class="link">
+          <ion-icon name="home-outline"></ion-icon>
+          <span style="--i: 1">Início</span>
+        </a>
+      </li>
+      <li class="link-item active">
+        <a href="descobrir.html" class="link">
+          <ion-icon name="earth-outline"></ion-icon>
+          <span style="--i: 2">Descobrir</span>
+        </a>
+      </li>
+      <li class="link-item">
+        <a href="sistema.html" class="link">
+          <ion-icon name="desktop-outline"></ion-icon>
+            <span style="--i: 5">Sistema</span>
+        </a>
+    </li>
+    <li class="link-item">
+      <a href="tempoReal.html" class="link">
+        <ion-icon name="timer-outline"></ion-icon>
+        <span style="--i: 5">Tempo real</span>
+      </a>
+    </li>
+      <li class="link-item">
+        <a href="login.html" class="link">
+          <ion-icon name="log-in-outline"></ion-icon>
+          <span style="--i: 7">login</span>
+        </a>
+      </li>
+      <li class="link-item dark-mode">
+        <a href="#" class="link">
+          <ion-icon name="moon-outline"></ion-icon>
+          <span style="--i: 8">Modo escuro</span>
+        </a>
+      </li>
+      <li class="link-item">
+        <a href="#" class="link">
+            <img src="./assets/img/user.jfif" alt="Imagem do usuario" id="user-image">
+            <span style="--i: 9">
+                <h4 id="user-name">nome user</h4>
+                <p id="user-email">nome</p>
+            </span>
+        </a>
+    </li>
+    </ul>
+  </div>
+  <!--video-->
+  <div class="globo">
+    <video autoplay muted loop id="left-video">
+        <source src="/assets/videos/globo.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+</div>
+<div class="info-container">
+  <div id="info-texto">
+      <h2>Exploração dos Oceanos</h2>
+      <p>
+          Os oceanos cobrem mais de 70% da superfície da Terra e são fundamentais para a vida no planeta. Eles regulam o clima, fornecem alimento e energia, e são o lar de uma incrível diversidade de vida marinha. A exploração dos oceanos nos permite entender melhor esses ecossistemas complexos e encontrar maneiras de preservá-los para as futuras gerações.
+      </p>
+      <ion-icon name="arrow-down-outline"></ion-icon>
+
+  </div>
+
+  <div id="info-texto2">
+      <h2>Oceano Pacífico, o Maior do Mundo</h2>
+      <p>
+          O Oceano Pacífico é o maior e mais profundo oceano da Terra, cobrindo aproximadamente um terço da superfície do planeta. Ele contém uma vasta diversidade de vida marinha e é o lar de muitas ilhas e arquipélagos.
+      </p>
+      <ion-icon name="arrow-down-outline"></ion-icon>
+  </div>
+
+  <div id="info-texto3">
+      <h2>Oceano Atlântico, o Segundo Maior</h2>
+      <p>
+          O Oceano Atlântico é o segundo maior oceano do mundo, cobrindo uma área significativa do hemisfério norte da Terra. Ele é conhecido por sua importância histórica, conectando continentes e servindo como uma importante rota comercial ao longo dos séculos.
+      </p>
+      <ion-icon name="arrow-down-outline"></ion-icon>
+  </div>
+  <div id="info-texto3">
+    <h2>O Mistério das Profundezas</h2>
+    <p>
+      As profundezas dos oceanos são um dos lugares menos explorados e menos compreendidos da Terra. Estima-se que mais de 80% do oceano ainda não tenha sido mapeado ou explorado, deixando muito a ser descoberto sobre os mistérios das profundezas.
+    </p>
+    <ion-icon name="arrow-down-outline"></ion-icon>
+</div>
+<div id="info-texto4">
+  <h2>biodiversidade</h2>
+  <p>
+    Os oceanos abrigam uma incrível variedade de vida, desde microorganismos até os maiores animais do planeta, como a baleia-azul. Cerca de 80% das espécies marinhas ainda estão por ser descobertas.
+   </p>
+  <ion-icon name="arrow-down-outline"></ion-icon>
+</div>
+
+</div>
+<footer class="rodape">
+  <p>&copy; 2024 - Todos os direitos reservados</p>
+</footer> 
+
+
+<div class="imagem-flutuante">
+  <img src="/assets/img/image-removebg-preview (2).png" alt="Imagem flutuante">
+</div>
+
+    <!--Script-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./assets/script.js"></script>
+
+  </body>
+</html>

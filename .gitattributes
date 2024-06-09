@@ -1,0 +1,5 @@
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+assets/videos/oceano-contaminado.mp4 filter=lfs diff=lfs merge=lfs -text
+assets* filter=lfs diff=lfs merge=lfs -text
+assets/* filter=lfs diff=lfs merge=lfs -text

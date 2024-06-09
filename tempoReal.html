@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" href="./assets/img/logo.png">
+    <title>OceanStream</title>
+  </head>
+  <body>
+    
+  <!--Menu vertical-->
+<div class="container">
+    <ul class="link-items">
+      <div class="logo">
+        <img src="./assets/img/logo.png" alt="logo da OceanStream">
+      </div>
+      <li class="link-item">
+        <a href="#" class="link">
+          <ion-icon name="home-outline"></ion-icon>
+          <span style="--i: 1">Início</span>
+        </a>
+      </li>
+      <li class="link-item">
+        <a href="descobrir.html" class="link">
+          <ion-icon name="earth-outline"></ion-icon>
+          <span style="--i: 2">Descobrir</span>
+        </a>
+      </li>
+      <li class="link-item">
+        <a href="sistema.html" class="link">
+          <ion-icon name="desktop-outline"></ion-icon>
+            <span style="--i: 5">Sistema</span>
+        </a>
+    </li>
+    <li class="link-item active">
+      <a href="tempoReal.html" class="link">
+        <ion-icon name="timer-outline"></ion-icon>
+        <span style="--i: 5">Tempo real</span>
+      </a>
+    </li>
+
+      <li class="link-item">
+        <a href="login.html" class="link">
+          <ion-icon name="log-in-outline"></ion-icon>
+          <span style="--i: 7">login</span>
+        </a>
+      </li>
+      <li class="link-item dark-mode">
+        <a href="#" class="link">
+          <ion-icon name="moon-outline"></ion-icon>
+          <span style="--i: 8">Modo escuro</span>
+        </a>
+      </li>
+      <li class="link-item">
+        <a href="#" class="link">
+            <img src="./assets/img/user.jfif" alt="Imagem do usuario" id="user-image">
+            <span style="--i: 9">
+                <h4 id="user-name">nome user</h4>
+                <p id="user-email">nome</p>
+            </span>
+        </a>
+    </li>
+    </ul>
+  </div>
+  <!--inicio-->
+  <div class="conteudo">
+    <section >
+        <section class="inicio">
+            <div class="inicio-conteudo">
+              <h1>OceanStream, Juntos por Mares Mais Limpos!</h1>
+              <p>Proteja os oceanos, preserve o futuro da Terra!</p>
+              <a href="#" class="btn">Saber mais!</a>
+            </div>
+
+          </section>
+
+        <video autoplay muted loop playsinline>
+            <source src="./assets/videos/oceano-contaminado.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
+
+      <div class="wave" id="wave1" style="--i:1;"></div>
+      <div class="wave" id="wave2" style="--i:2;"></div>
+      <div class="wave" id="wave3" style="--i:3;"></div>
+      <div class="wave" id="wave4" style="--i:4;"></div>
+      
+    </section>
+
+
+    <div class="classe-problema">
+      <section id="problema">
+          <h2>A Luta Contra a Poluição Plástica nos Oceanos</h2>
+          <p>Os oceanos são vitais para a vida no planeta, mas estão sofrendo com a poluição plástica. Milhões de toneladas de plástico entram nos mares a cada ano, prejudicando a vida marinha e os ecossistemas. Assista ao vídeo do lado para entender a gravidade deste problema e como você pode ajudar a salvá-los.</p>
+      </section>
+      <div class="video-container">
+        <iframe id="oceanVideo" width="560" height="315" src="https://www.youtube.com/embed/Yomf5pBN8dY" frameborder="0" allowfullscreen></iframe>
+      </div>
+  </div>
+  
+  <section id="tecnologia">
+    <div class="tecnologia-container">
+        <h2>Monitoramento em Tempo Real, Lixo Retirado dos Oceanos</h2>
+        <p>Está página exibe em tempo real a quantidade de lixo retirado dos oceanos, destacando a importância de combater a poluição plástica e preservar os ecossistemas marinhos. Ao mostrar esses números, ela incentiva a conscientização e ações para proteger nossos oceanos e garantir um futuro sustentável para o planeta.</p>
+    </div>
+</section>
+
+          <div class="forms-cadastro">
+            <h1>Cadastro de Coleta de Lixo do Oceano</h1>
+            <h2>Total de quilos de lixo coletados: <span id="totalQuilos">0</span> kg</h2>
+
+            <form id="lixoForm">
+                <label for="nome">Name:</label>
+                  <input type="text" id="nome" name="nome" required>
+                
+
+                <label for="localizacao">Localização:</label>
+                  <input type="text" id="localizacao" name="localizacao" required>
+                
+                
+                <label for="quilos">Quilos de lixo coletados:</label>
+                  <input type="number" id="quilos" name="quilos" step="0.1" required>
+                
+                
+                <label for="parte">Parte do oceano onde coletou:</label>
+                  <input type="text" id="parte" name="parte" required>
+              
+                <button type="submit">Cadastrar</button>
+            </form>
+          </div>
+          <footer class="rodape">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </footer>
+  <!--Script-->
+  <script src=""></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./assets/script.js"></script>
+
+  </body>
+</html>

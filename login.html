@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/login.css" />
+    <link rel="icon" href="./assets/img/logo.png">
+    <title>OceanStream - Login</title>
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="/assets/videos/video_fundo.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+    <div class="overlay"></div>
+    <div class="container">
+        <ul class="link-items">
+            <div class="logo">
+                <img src="./assets/img/logo.png" alt="logo da OceanStream">
+            </div>
+            <li class="link-item">
+                <a href="index.html" class="link">
+                    <ion-icon name="home-outline"></ion-icon>
+                    <span style="--i: 1">Início</span>
+                </a>
+            </li>
+            <li class="link-item">
+                <a href="descobrir.html" class="link">
+                    <ion-icon name="earth-outline"></ion-icon>
+                    <span style="--i: 2">Descobrir</span>
+                </a>
+            </li>
+            <li class="link-item">
+                <a href="sistema.html" class="link">
+                    <ion-icon name="desktop-outline"></ion-icon>
+                    <span style="--i: 5">Sistema</span>
+                </a>
+            </li>
+            <li class="link-item">
+                <a href="tempoReal.html" class="link">
+                    <ion-icon name="timer-outline"></ion-icon>
+                    <span style="--i: 5">Tempo real</span>
+                </a>
+            </li>
+            <li class="link-item active">
+                <a href="login.html" class="link">
+                    <ion-icon name="log-in-outline"></ion-icon>
+                    <span style="--i: 7">login</span>
+                </a>
+            </li>
+            <li class="link-item dark-mode">
+                <a href="#" class="link">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <span style="--i: 8">Modo escuro</span>
+                </a>
+            </li>
+            <li class="link-item">
+                <a href="#" class="link">
+                    <img src="./assets/img/user.jfif" alt="Imagem do usuario" id="user-image">
+                    <span style="--i: 9">
+                        <h4 id="user-name">nome user</h4>
+                        <p id="user-email">nome</p>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container-login form-container">
+        <div id="login-form" class="form">
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" required />
+            </div>
+            <div class="form-group">
+                <label for="login-password">Senha</label>
+                <input type="password" id="login-password" required />
+            </div>
+            <div class="form-group">
+                <button onclick="login()">Login</button>
+            </div>
+            <div class="form-group">
+                <a class="switch-form" onclick="showForgotPasswordForm()">Esqueci a senha</a>
+            </div>
+            <div class="form-group">
+                <a class="switch-form" onclick="showRegisterForm()">Cadastre-se</a>
+            </div>
+        </div>
+
+        <div id="register-form" class="form" style="display: none;">
+            <h2>Cadastro</h2>
+            <div class="form-group">
+                <label for="register-name">Nome</label>
+                <input type="text" id="register-name" required />
+            </div>
+            <div class="form-group">
+                <label for="register-email">Email</label>
+                <input type="email" id="register-email" required />
+            </div>
+            <div class="form-group">
+                <label for="register-password">Senha</label>
+                <input type="password" id="register-password" required minlength="6" maxlength="10"/>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirmar Senha</label>
+                <input type="password" id="confirm-password" required minlength="6" maxlength="10"/>
+            </div>
+            <div class="form-group">
+                <label for="register-age">Idade</label>
+                <input type="number" id="register-age" required minlength="1" maxlength="3"/>
+            </div>
+            <div class="form-group">
+                <label for="register-specialization">Especialização</label>
+                <input type="text" id="register-specialization" required />
+            </div>
+            <div class="form-group">
+                <label for="register-photo">Foto</label>
+                <input type="file" id="register-photo" accept="image/*" required />
+            </div>
+            <div class="form-group">
+                <button onclick="register()">Cadastrar</button>
+            </div>
+            <div class="form-group">
+                <a class="switch-form" onclick="showLoginForm()">Já tem uma conta? Login</a>
+            </div>
+        </div>
+
+        <div id="forgot-password-form" class="form" style="display: none;">
+            <h2>Recuperar Senha</h2>
+            <div class="form-group">
+                <label for="forgot-password-email">Email</label>
+                <input type="email" id="forgot-password-email" required />
+            </div>
+            <div class="form-group">
+                <button onclick="forgotPassword()">Enviar</button>
+            </div>
+            <div class="form-group">
+                <a class="switch-form" onclick="showLoginForm()">Voltar ao Login</a>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
